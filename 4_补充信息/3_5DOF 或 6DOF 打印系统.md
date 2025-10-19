@@ -72,8 +72,8 @@
 - 基于优化后的曲面，生成沿应力方向的丝线路径，实现力学增强。
 ### 算法流程
 1. 输入：
-  - 3D 模型（tetrahedral mesh）；
-  - 外部载荷（loading conditions）。
+    - 3D 模型（tetrahedral mesh）；
+    - 外部载荷（loading conditions）。
 2. 有限元分析（FEA）：
   - 计算每个四面体单元的应力张量，得到主应力方向。
 3. 矢量场优化 $V(x)$：
