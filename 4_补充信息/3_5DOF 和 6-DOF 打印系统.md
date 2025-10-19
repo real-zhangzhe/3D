@@ -1,5 +1,6 @@
 # 5-DOF 笛卡尔坐标打印系统
-[![ 2025-10-19 150552.png](https://s2.loli.net/2025/10/19/SDoE1qdukZMT9zg.png)](https://www.youtube.com/watch?v=x9rG15qrDIE)
+[![ 2025-10-19 150745.png](https://s2.loli.net/2025/10/19/iG3RYnNyx9MHDhz.png)](https://www.youtube.com/watch?v=x9rG15qrDIE)
+[![ 2025-10-19 151024.png](https://s2.loli.net/2025/10/19/CSHTUFonvBmLeZa.png)](https://www.youtube.com/watch?v=X2o2-SJFv2M)
 
 - 5-DOF 笛卡尔坐标打印系统是在当前 3-DOF 笛卡尔坐标系统的基础上，增加了物料底盘的 **倾斜** 和 **旋转** 自由度，可实现曲面打印
 - 5-DOF 笛卡尔坐标打印系统和目前 3-DOF 笛卡尔坐标打印系统在精度上没有显著差别
