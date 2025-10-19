@@ -39,4 +39,6 @@
  
 ![ 2025-10-19 110851.png](https://s2.loli.net/2025/10/19/4T8wcryNuYbjMVq.png)
 
-## 
+## 后续 TODO
+1. 曲面切片软件研发，open5x 开源代码中只包含了切片结果，作者自身也没有解决自动化曲面切片算法的问题
+2. G-code 生成时，和 3-DOF 笛卡尔坐标打印系统不同，5-DOF 打印系统需要多轴联动时精确计算各轴运动距离与喷嘴速度匹配，需要计算运动的欧几里得距离： $d=\sqrt{\Delta x^2+\Delta y^2+\Delta z^2+\Delta u^2+\Delta v^2+\Delta e^2}$
