@@ -75,21 +75,21 @@
     - 3D 模型（tetrahedral mesh）；
     - 外部载荷（loading conditions）。
 2. 有限元分析（FEA）：
-  - 计算每个四面体单元的应力张量，得到主应力方向。
+    - 计算每个四面体单元的应力张量，得到主应力方向。
 3. 矢量场优化 $V(x)$：
-  - 在高应力区域（critical regions）内，使 $V(x)$ 的方向与主应力方向一致；
-  - 同时保持场的平滑性、避免方向冲突。
+    - 在高应力区域（critical regions）内，使 $V(x)$ 的方向与主应力方向一致；
+    - 同时保持场的平滑性、避免方向冲突。
 4. 标量场构造 $G(x)$：
-  - 通过最小化 $||\Delta G(x)-V(x)||^2$ ，得到曲面切片层（isosurfaces）。
+    - 通过最小化 $||\Delta G(x)-V(x)||^2$ ，得到曲面切片层（isosurfaces）。
 5. 制造可达性优化：
-  - 搜索最佳打印姿态（orientation）；
-  - 通过场松弛（field relaxation）调整 $V(x)$，避免喷头碰撞。
+    - 搜索最佳打印姿态（orientation）；
+    - 通过场松弛（field relaxation）调整 $V(x)$，避免喷头碰撞。
 6. 支撑生成（Support Generation）：
-  - 对悬空区域外推场，生成与主体层兼容的支撑层。
+    - 对悬空区域外推场，生成与主体层兼容的支撑层。
 7. 路径规划（Toolpath Generation）：
-  - 在关键区域沿应力方向生成路径；
-  - 其他区域采用混合策略（directional-parallel + contour-parallel）；
-  - 确保路径连续、填充率高。
+    - 在关键区域沿应力方向生成路径；
+    - 其他区域采用混合策略（directional-parallel + contour-parallel）；
+    - 确保路径连续、填充率高。
 ### 技术细节
 模块	|关键技术
 ---|---
