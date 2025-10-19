@@ -47,6 +47,12 @@
 3. G-code 生成时，和 3-DOF 笛卡尔坐标打印系统不同，5-DOF 打印系统需要多轴联动时精确计算各轴运动距离与喷嘴速度匹配，需要计算运动的欧几里得距离： $d=\sqrt{\Delta x^2+\Delta y^2+\Delta z^2+\Delta u^2+\Delta v^2+\Delta e^2}$ 。
 
 ## 【进阶】方案二：基于场的优化
+
+![ 2025-10-19 114108.png](https://s2.loli.net/2025/10/19/W2mprqIGDXLsz35.png)
+
+![ 2025-10-19 114135.png](https://s2.loli.net/2025/10/19/jHASmsWbnDai5Ic.png)
+
+![ 2025-10-19 114149.png](https://s2.loli.net/2025/10/19/5ISHKYhwvaQtODU.png)
 ### TL;DR
 - paper: [Reinforced FDM: Multi-Axis Filament Alignment with Controlled  Anisotropic Strength](https://mewangcl.github.io/pubs/SIGAsia2020ReinforcedFDM.pdf)
 - code: [ReinforcedFDM](https://github.com/GuoxinFang/ReinforcedFDM)
@@ -66,10 +72,10 @@
 - 基于优化后的曲面，生成沿应力方向的丝线路径，实现力学增强。
 ### 算法流程
 1. 输入：
-   - 3D 模型（tetrahedral mesh）；
-   - 外部载荷（loading conditions）。
+  - 3D 模型（tetrahedral mesh）；
+  - 外部载荷（loading conditions）。
 2. 有限元分析（FEA）：
-   - 计算每个四面体单元的应力张量，得到主应力方向。
+  - 计算每个四面体单元的应力张量，得到主应力方向。
 3. 矢量场优化 $V(x)$：
   - 在高应力区域（critical regions）内，使 $V(x)$ 的方向与主应力方向一致；
   - 同时保持场的平滑性、避免方向冲突。
