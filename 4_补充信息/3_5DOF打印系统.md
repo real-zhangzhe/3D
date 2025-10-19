@@ -56,6 +56,7 @@
 ### TL;DR
 - paper: [Reinforced FDM: Multi-Axis Filament Alignment with Controlled  Anisotropic Strength](https://mewangcl.github.io/pubs/SIGAsia2020ReinforcedFDM.pdf)
 - code: [ReinforcedFDM](https://github.com/GuoxinFang/ReinforcedFDM)
+- 演示视频：https://www.youtube.com/watch?v=X2o2-SJFv2M
 - 论文希望 **利用多轴打印机（multi-axis 3D printer）的能力，让喷头能在空间中改变方向，使打印丝线能沿最大主应力方向（principal stress direction）** 铺设，从而显著增强结构强度。
 ### 算法核心思想
 - 算法核心思想是：基于场的优化框架（field-based optimization framework），主要包括：
