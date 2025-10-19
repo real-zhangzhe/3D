@@ -105,3 +105,8 @@
 
 ![ 2025-10-19 131704.png](https://s2.loli.net/2025/10/19/TRkJAOoDWujaYF6.png)
 
+# 6-DOF 关节型机械臂打印系统
+![Gemini_Generated_Image_8mpn8z8mpn8z8mpn.png](https://s2.loli.net/2025/10/19/9emSF7PZUvI5oVl.png)
+
+- 对于 FDM 3D 打印这种连续操作的应用场景，5-DOF 打印 + 曲面切片算法已经可以解决几乎目前 3-DOF 打印遇到的所有问题，而且依然属于笛卡尔坐标系的扩展
+- 6 DOF 机械臂控制是一种全新的打印范式，完全脱离笛卡尔坐标系，甚至可以摆脱切片算法，适用于大规模制造、以及无法描述为在曲面上铺层的打印范式
